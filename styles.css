@@ -74,7 +74,7 @@ a:active {
 a:hover {
   opacity: 1;
   /* Aumenta a opacidade ao passar o mouse */
-  color: #163EBC;
+  color: white;
 }
 
 /* Estilos para a seção "hero" */
