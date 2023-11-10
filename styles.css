@@ -1,0 +1,583 @@
+/* Define estilos padrão para todos os elementos */
+* {
+  margin: 0;
+  /* Remove margens */
+  padding: 0;
+  /* Remove preenchimentos */
+  font-size: 100%;
+  /* Define o tamanho da fonte em relação ao padrão do navegador*/
+  box-sizing: border-box;
+  /*  Faz com que a largura/altura inclua bordas e preenchimentos */
+  font-family: 'Open Sans', sans-serif;
+  /* Define a família de fontes */
+}
+
+/* Estilos para o cabeçalho (header) */
+header {
+  background-color: #163EBC;
+  /* Define a cor de fundo */
+  width: 100%;
+  /* Define a largura como 100% da largura do viewport */
+  position: absolute;
+  /* Define a posição como absoluta */
+  top: 0;
+  /* Coloca o cabeçalho no topo da página */
+  left: 0;
+  /* Coloca o cabeçalho no canto esquerdo */
+  padding: 20px 50px;
+  /* Define preenchimento interno */
+  display: flex;
+  /* Define como um flex container */
+  justify-content: space-between;
+  /* Alinha os elementos internos horizontalmente */
+  align-items: center;
+  /* Alinha os elementos internos verticalmente */
+}
+
+/* Estilos para a imagem dentro do cabeçalho */
+header img {
+  width: 200px;
+  /* Define a largura da imagem */
+}
+
+/* Estilos para a barra de navegação no cabeçalho */
+header nav {
+  display: flex;
+  /* Define como um flex container */
+}
+
+/* Estilos para links em geral */
+a {
+  text-decoration: none;
+  /* Remove decoração de texto sublinhado */
+  cursor: pointer;
+  /* Altera o cursor para uma mão ao passar o mouse */
+  opacity: 0.8;
+  /* Define a opacidade do elemento */
+  padding: 0 10px;
+  /* Define preenchimento interno horizontal */
+}
+
+nav {
+  color: white;
+}
+
+/* Estilos para links visitados, ao passar o mouse e ativos */
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  /* Herda a cor do texto */
+}
+
+/* Estilos para links ao passar o mouse sobre eles */
+a:hover {
+  opacity: 1;
+  /* Aumenta a opacidade ao passar o mouse */
+  color: #163EBC;
+}
+
+/* Estilos para a seção "hero" */
+.hero {
+  background-image: url(images/hero.png);
+  /* Define a imagem de fundo */
+  background-size: cover;
+  /* Redimensiona a imagem para cobrir o elemento */
+  min-height: 60vh;
+  /* Define a altura mínima como 100% da altura do viewport */
+  color: #163EBC;
+  /* Define a cor do texto */
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+  display: flex;
+  /* Define como um flex container */
+  flex-direction: column;
+  /* Define a direção da disposição dos elementos flex */
+  justify-content: space-around;
+  /* Alinha os elementos internos verticalmente */
+  align-items: center;
+  /* Alinha os elementos internos horizontalmente */
+}
+
+/* Estilos para os títulos (h1) dentro da seção "hero" */
+.hero h1 {
+  font-size: 50px;
+  /* Define o tamanho da fonte */
+  margin-bottom: 15px;
+  /* Define a margem inferior */
+}
+
+/* Estilos para os subtítulos (h3) dentro da seção "hero" */
+.hero h3 {
+  font-size: 25px;
+  /* Define o tamanho da fonte */
+  margin-bottom: 15px;
+  /* Define a margem inferior */
+}
+
+/* Estilos para o botão (.btn) dentro da seção "hero" */
+.hero .btn {
+  background-color: white;
+  /* Define a cor de fundo do botão */
+  /* arredonda a borda do elemento */
+  /* Define a borda arredondada */
+  border-radius: 4px;
+  color: #191c03;
+  padding: 20px 50px;
+  /* Define preenchimento interno */
+  /* deixar o texto maiusculo */
+  text-transform: uppercase;
+}
+
+.know-the-ebytr {
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para o título (h3) na seção "know-the-ebytr" */
+.know-the-ebytr h3 {
+  font-size: 25px;
+  /* Define o tamanho da fonte */
+  margin-bottom: 35px;
+  /* Define a margem inferior */
+  /* tudo que for inline ou inline-block é afetado pelo text-align */
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+  color: #191c03;
+  /* Define a cor do texto */
+}
+
+/* Estilos para parágrafos (p) na seção "know-the-ebytr" */
+.know-the-ebytr p {
+  max-width: 800px;
+  /* Define a largura máxima */
+  margin-bottom: 35px;
+  /* Define a margem inferior */
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+  color: #191c03;
+  /* Define a cor do texto */
+}
+
+/* Estilos para a linha horizontal (hr) na seção "know-the-ebytr" */
+.know-the-ebytr hr {
+  width: 200px;
+  /* Define a largura da linha */
+  height: 2px;
+  /* Define a altura da linha */
+  margin-bottom: 70px;
+  /* Define a margem inferior */
+  border: none;
+  /* Remove a borda */
+  background-color: #191c03;
+  /* Define a cor de fundo */
+}
+
+/* Estilos para a classe "grid" na seção "know-the-ebytr" */
+.know-the-ebytr .grid {
+  width: 100%;
+  /* Define a largura como 100% do contêiner pai */
+  display: flex;
+  /* Define como um flex container */
+  flex-wrap: wrap;
+  /* Permite que os elementos quebrem para a próxima linha */
+}
+
+/* Estilos para os elementos dentro da classe "grid" na seção "know-the-ebytr" */
+.know-the-ebytr .grid span {
+  height: 350px;
+  /* Define a altura */
+  padding: 20px;
+  /* Define preenchimento interno */
+  border-radius: 4px;
+  /* Define a borda arredondada */
+  background-clip: content-box;
+  /* Define o recorte de fundo */
+  background-size: cover;
+  /* Redimensiona a imagem para cobrir o elemento */
+  background-position: center;
+  /* Define a posição da imagem de fundo */
+}
+
+/* Estilos para elementos de classe "small" na classe "grid" na seção "know-the-ebytr" */
+.know-the-ebytr .grid span.small {
+  flex-basis: 40%;
+  /* Define a largura base do elemento flex */
+}
+
+/* Estilos para elementos de classe "large" na classe "grid" na seção "know-the-ebytr" */
+.know-the-ebytr .grid span.large {
+  flex-basis: 60%;
+  /* Define a largura base do elemento flex */
+}
+
+
+
+/* Estilos para a seção "features" */
+.features {
+  background-color: #191c03;
+  /* Define a cor de fundo */
+  padding: 100px 50px;
+  /* Define preenchimento interno */
+  display: flex;
+  /* Define como um flex container */
+  flex-direction: column;
+  /* Define a direção da disposição dos elementos flex */
+  align-items: center;
+  /* Alinha os elementos internos horizontalmente */
+}
+
+/* Estilos para o título (h3) na seção "features" */
+.features h3 {
+  font-size: 25px;
+  /* Define o tamanho da fonte */
+  margin-bottom: 35px;
+  /* Define a margem inferior */
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+  color: white;
+  /* Define a cor do texto */
+}
+
+/* Estilos para parágrafos (p) na seção "features" */
+.features p {
+  max-width: 800px;
+  /* Define a largura máxima */
+  margin-bottom: 35px;
+  /* Define a margem inferior */
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+  color: white;
+  /* Define a cor do texto */
+}
+
+/* Estilos para a linha horizontal (hr) na seção "features" */
+.features hr {
+  width: 200px;
+  /* Define a largura da linha */
+  height: 2px;
+  /* Define a altura da linha */
+  margin-bottom: 70px;
+  /* Define a margem inferior */
+  border: none;
+  /* Remove a borda */
+  background-color: white;
+  /* Define a cor de fundo */
+}
+
+/* Estilos para a classe "grid" na seção "features" */
+.features .grid {
+  width: 100%;
+  /* Define a largura como 100% do contêiner pai */
+  display: flex;
+  /* Define como um flex container */
+  justify-content: space-between;
+}
+
+/* Estilos para os elementos da lista (li) na classe "grid" na seção "features" */
+.features .grid li {
+  padding: 0 30px;
+  /* Define preenchimento interno horizontal */
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+}
+
+/* Estilos para ícones (i) na classe "grid" na seção "features" */
+.features .grid li i {
+  color: #c3c63b;
+  /* Define a cor do ícone */
+  font-size: 35px;
+  /* Define o tamanho da fonte do ícone */
+  margin-bottom: 30px;
+  /* Define a margem inferior */
+}
+
+/* Estilos para títulos (h4) na classe "grid" na seção "features" */
+.features .grid li h4 {
+  font-size: 25px;
+  /* Define o tamanho da fonte */
+  color: #c3c63b;
+  /* Define a cor do texto */
+  margin-bottom: 30px;
+  /* Define a margem inferior */
+}
+
+/* Estilos para a seção "newsletter" */
+.newsletter {
+  display: flex;
+  /* Define como um flex container */
+  flex-direction: column;
+  /* Define a direção da disposição dos elementos flex */
+  align-items: center;
+  /* Alinha os elementos internos horizontalmente */
+  padding: 100px 50px;
+  /* Define preenchimento interno */
+}
+
+/* Estilos para o título (h3) na seção "newsletter" */
+.newsletter h3 {
+  font-size: 25px;
+  /* Define o tamanho da fonte */
+  margin-bottom: 35px;
+  /* Define a margem inferior */
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+  color: #191c03;
+  /* Define a cor do texto */
+}
+
+/* Estilos para parágrafos (p) na seção "newsletter" */
+.newsletter p {
+  max-width: 800px;
+  /* Define a largura máxima */
+  margin-bottom: 35px;
+  /* Define a margem inferior */
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+  color: #191c03;
+  /* Define a cor do texto */
+}
+
+/* Estilos para a entrada de texto (input) na seção "newsletter" */
+.newsletter input {
+  padding: 15px;
+  /* Define o preenchimento interno */
+  border: 1px solid #191c03;
+  /* Define a borda com cor */
+  border-radius: 4px;
+  /* Define a borda arredondada */
+  margin-right: 15px;
+  /* Define a margem direita */
+  flex: 1;
+  /* Usa o espaço restante disponível */
+}
+
+/* Estilos para o formulário na seção "newsletter" */
+.newsletter form {
+  display: flex;
+  /* Define como um flex container */
+  align-items: center;
+  /* Alinha os elementos internos horizontalmente */
+  justify-content: center;
+  /* Centraliza os elementos horizontalmente */
+  flex-wrap: wrap;
+  /* Permite que os elementos quebrem para a próxima linha */
+  width: 80%;
+  /* Define a largura do formulário */
+  max-width: 800px;
+  /* Define a largura máxima do formulário */
+}
+
+/* Estilos para o botão no formulário na seção "newsletter" */
+.newsletter button {
+  padding: 15px;
+  /* Define o preenchimento interno */
+  background-color: #191c03;
+  /* Define a cor de fundo do botão */
+  color: white;
+  /* Define a cor do texto */
+  text-transform: uppercase;
+  /* Transforma o texto em maiúsculas */
+  border: none;
+  /* Remove a borda */
+  border-radius: 4px;
+  /* Define a borda arredondada */
+  cursor: pointer;
+  /* Altera o cursor para uma mão ao passar o mouse */
+}
+
+/* Estilos para o rodapé (footer) */
+footer {
+  display: flex;
+  /* Define como um flex container */
+  flex-direction: column;
+  /* Define a direção da disposição dos elementos flex */
+  align-items: center;
+  /* Alinha os elementos internos horizontalmente */
+  background-color: #191c03;
+  /* Define a cor de fundo */
+  padding: 50px 0;
+  /* Define preenchimento interno */
+}
+
+/* Estilos para a lista não ordenada (ul) no rodapé */
+footer ul {
+  display: flex;
+  /* Define como um flex container */
+  margin-bottom: 25px;
+  /* Define a margem inferior */
+}
+
+/* Estilos para os itens da lista (li) no rodapé */
+footer ul li {
+  margin-right: 10px;
+  /* Define a margem direita */
+}
+
+/* Estilos para o último item da lista no rodapé */
+footer ul li:last-child {
+  margin-right: 0;
+  /* Remove a margem direita */
+}
+
+/* Estilos para ícones (i) nos itens da lista no rodapé */
+footer ul li i {
+  color: white;
+  /* Define a cor do ícone */
+  font-size: 25px;
+  /* Define o tamanho da fonte do ícone */
+}
+
+/* Estilos para o texto no rodapé */
+footer p {
+  color: white;
+  /* Define a cor do texto */
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+}
+
+/* Ordem dos itens da lista no rodapé */
+footer ul li:nth-child(1) {
+  order: 1;
+  /* Define a ordem do primeiro item */
+}
+
+footer ul li:nth-child(2) {
+  order: 2;
+  /* Define a ordem do segundo item */
+}
+
+footer ul li:nth-child(3) {
+  order: 3;
+  /* Define a ordem do terceiro item */
+}
+
+footer ul li:nth-child(4) {
+  order: 4;
+  /* Define a ordem do quarto item */
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    background-color: chartreuse;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+    max-height: 80px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero h3 {
+    font-size: 15px;
+  }
+}
+
+/* Código da aula 6.5 */
+@media screen and (max-width: 900px) {
+  /* VAMOS PARA O NOSSO PRIMEIRO OBJETIVO:
+   - [ ] Ajustar Menu: centralizar logo e remover links; */
+
+  header nav {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  /* Ajustar seção Hero: diminuir o tamanho da fonte; */
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero h3 {
+    font-size: 26px;
+  }
+
+  /* Ajustar as imagens na seção Fotos: devem aparecer uma abaixo da outra; */
+
+  .know-the-ebytr {
+    padding: 100px 10px;
+  }
+
+  .know-the-ebytr .grid span {
+    padding: 10px;
+  }
+
+  .know-the-ebytr .grid span.small {
+    flex-basis: 100%;
+  }
+
+  .know-the-ebytr .grid span.large {
+    flex-basis: 100%;
+  }
+
+  .features .grid {
+    flex-direction: column;
+  }
+
+  /* Ajustar a Newsletter: ajustar espaço entre o input e o botão; */
+
+  .newsletter button {
+    margin-top: 10px;
+  }
+
+  /* Ajustar Footer: aumentar o tamanho dos ícones. */
+  footer ul li i {
+    font-size: 40px;
+  }
+}
+
+
+@media print {
+  .features {
+    background-color: white !important;
+  }
+
+  * {
+    color: black !important;
+    background-color: white !important;
+  }
+}
+
+/* Estilo para a lista de tecnologias */
+.tech-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para os itens da lista de tecnologias */
+.tech-list li {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 5px;
+}
+
+/* Estilo para o ícone antes do texto da tecnologia */
+.tech-list li::before {
+  content: "\2022"; /* Código do caractere do marcador de lista */
+  color: #3498db; /* Cor do marcador de lista */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}

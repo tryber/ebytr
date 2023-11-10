@@ -1,0 +1,72 @@
+/* all
+print
+screen
+speech */
+
+/* Código da aula 6.5 */
+@media screen and (max-width: 900px) {
+  /* VAMOS PARA O NOSSO PRIMEIRO OBJETIVO:
+   - [ ] Ajustar Menu: centralizar logo e remover links; */
+
+  header nav {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  /* Ajustar seção Hero: diminuir o tamanho da fonte; */
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero h3 {
+    font-size: 26px;
+  }
+
+  /* Ajustar as imagens na seção Fotos: devem aparecer uma abaixo da outra; */
+
+  .know-the-ebytr {
+    padding: 100px 10px;
+  }
+
+  .know-the-ebytr .grid span {
+    padding: 10px;
+  }
+
+  .know-the-ebytr .grid span.small {
+    flex-basis: 100%;
+  }
+
+  .know-the-ebytr .grid span.large {
+    flex-basis: 100%;
+  }
+
+  .features .grid {
+    flex-direction: column;
+  }
+
+  /* Ajustar a Newsletter: ajustar espaço entre o input e o botão; */
+
+  .newsletter button {
+    margin-top: 10px;
+  }
+  mongodb://localhost:27018/
+  /* Ajustar Footer: aumentar o tamanho dos ícones. */
+  footer ul li i {
+    font-size: 40px;
+  }
+}
+
+
+@media print {
+  .features {
+    background-color: white !important;
+  }
+
+  * {
+    color: black !important;
+    background-color: white !important;
+  }
+}
